@@ -99,8 +99,8 @@ hr.thin-gray {
 }
 
 .main_header {
-    width: 132px;
-    height: 37px;
+    padding: 10px 18px 10px 18px;
+    width: max-content;
     background-color: #F2F6FA;
     border-radius: 5px;
     display: flex;
@@ -147,14 +147,12 @@ hr.thin-gray {
 
 .main_footer-button {
     background-color: #FED84C;
-    width: 277px;
-    height: 88px;
+    width: max-content;
     border-radius: 8px;
-    padding: 30px, 50px, 30px, 50px;
+    padding: 30px 50px 30px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .main_footer-button__text {
@@ -267,8 +265,8 @@ hr.thin-gray {
 
 .card_button {
     background-color: #FED84C;
-    width: 163px;
-    height: 68px;
+    padding: 20px 40px 20px 40px;
+    width: max-content;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -300,13 +298,107 @@ hr.thin-gray {
     left: 200px;
 
 }
+/* Order */
 
 .order_container {
     background-color: #081130;
 }
 
-.order_container-header {
-    max-width: 100%; 
-    height: auto; 
+.order_container-header,
+.order_container-footer {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
     display: block;
+    z-index: 2; /* Устанавливаем z-index, чтобы эти элементы отображались над mockup */
+    position: relative;
+}
+
+.main_сontent-order {
+    margin-top: 70px;
+    margin-left: 1100px;
+}
+
+
+.main_header-order {
+    padding: 10px 18px 10px 18px;
+    width: max-content;
+    background-color: #F2F6FA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.main_header-text-order {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16.5px;
+    letter-spacing: 1px;
+    
+}
+
+.main-title-order {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+
+}
+
+.main_decs-order{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30.03px;
+    letter-spacing: -0.2px;
+    margin-bottom: 24px;
+
+}
+
+
+.main_footer-order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.main_footer-button-order {
+    background-color: #FED84C;
+    width: max-content;
+    border-radius: 8px;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_footer-button__text-order {
+    color: #2E363E;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.order_container-mockup {
+    position: absolute; 
+    top: 3400px;
+    z-index: 1;
+}
+
+.img8 {
+    position: absolute;
+    right: 120px;
+    top: 3390px;
+}
+
+.img9 {
+    position: absolute;
+    left: 300px;
+    top: 3450px;
 }
